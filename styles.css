@@ -1,0 +1,124 @@
+:root{
+    --Orange: hsl(25, 97%, 53%);
+
+    --White: hsl(0, 0%, 100%);
+    --LighGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+
+    --font: "Overpass", sans-serif;
+}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+  h1{
+    color: var(--White);
+    font-family: var(--font); 
+    margin: 30px 0 20px; 
+    font-size: 34px;
+  }
+p{
+    font-size: 15px;
+    font-family: var(--font);
+    color: var(--LighGrey);
+}
+.contenedor{
+    background-color: var(--VeryDarkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.contenedor-card{
+    background: radial-gradient(circle 700px at top, var(--DarkBlue), var(--VeryDarkBlue));
+    max-width: 500px;
+    max-height: 500px;
+    height: 100%;
+    padding: 30px;
+    border-radius: 20px;
+}
+.contenedor-card p{
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+.icono{
+    display: flex;
+    background-color: var(--DarkBlue);
+    border-radius: 50%;
+    max-width: 50px;
+    max-height: 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.icono img{
+    width: 50%;
+    height: 50%;
+}
+.rate{
+    display: inline-flex;
+    padding: 7px;
+    width: 100%;
+    justify-content: space-between;
+}
+.form{
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+.btn{
+    padding: 15px;
+    border-radius: 50%;
+    border-style: none;
+    cursor: pointer;
+    max-width: 50px;
+    max-height: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--DarkBlue);
+    color: var(--LighGrey);
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.btn:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+.btn:focus{
+    background-color: var(--LighGrey);
+    color: var(--White);
+}
+.btn-submit{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 30px;
+    max-height: 55px;
+}
+.submit{
+    background-color: var(--Orange);
+    width: 100%;
+    height: 60px;
+    border-style: none;
+    border-radius: 50px;
+    padding: 15px 0;
+    text-transform: uppercase;
+    color: var(--White);
+    font-size: 18px;
+    letter-spacing: 4px;
+    cursor: +;
+}
+.submit:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
