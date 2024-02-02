@@ -12,7 +12,7 @@
 
 </head>
 <body class="contenedor">
-  <section class="contenedor-card">
+  <section id="page" class="contenedor-card">
     <div class="icono">
       <img src="./images/icon-star.svg" alt="star">
     </div>
@@ -24,17 +24,28 @@
     </div>
       <div class="form">
         <div class="rate">
-          <button id="btn1" class="btn" onclick="btn(1)">1</button>
-          <button id="btn2" class="btn" onclick="btn(2)">2</button>
-          <button id="btn3" class="btn" onclick="btn(3)">3</button>
-          <button id="btn4" class="btn" onclick="btn(4)">4</button>
-          <button id="btn5" class="btn" onclick="btn(5)">5</button>
+          <button class="btn" id="b1" value="1">1</button>
+          <button class="btn" id="b2" value="2">2</button>
+          <button class="btn" id="b3" value="3">3</button>
+          <button class="btn" id="b4" value="4">4</button>
+          <button class="btn" id="b5" value="5">5</button>
         </div>
         <div class="btn-submit">
-          <button onclick="submit()" class="submit">Submit</button>
+          <button onclick="rate()" class="submit">Submit</button>
         </div>
     </div>
-
+  </section>
+  <section id="page2" class="contenedor-card ocultar">
+    <div class="thankyou">
+      <img src="./images/illustration-thank-you.svg" alt="thankyou">
+      <div class="selected-card">
+        <p class="selected">You selected <span id="numrate">nan</span> out of 5</p>
+      </div>
+      <h2>Thank you!</h2>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+        dont hesitate to get in touch!
+      </p>
+    </div>
   </section>
 <script src="app.js"></script>
 </body>

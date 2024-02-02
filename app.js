@@ -1,31 +1,20 @@
-const eleccion = 0;
+const buttons = document.querySelectorAll('.btn');
+const page = document.getElementById('page');
+const page2 = document.getElementById('page2');
+let rateNumber = 0;
 
-function btn(num){
+buttons.forEach(function(button){
+   button.addEventListener('focus', function() {
+    rateNumber = parseInt(button.value)
+   })
+})
 
-    if(num === 1){
-         const eleccion = 1;
-         console.log(eleccion)
-    }else if(num ===2){
-        const eleccion = 2;
-        console.log(eleccion)
-    }else if(num ===3){
-        const eleccion = 3;
-        console.log(eleccion)
-    }else if(num ===4){
-        const eleccion = 4;
-        console.log(eleccion)
-    }else if(num ===5){
-        const eleccion = 5;
-        console.log(eleccion)
+function rate(){
+    if(rateNumber != 0){
+        page.classList.toggle('ocultar');
+        page2.classList.toggle('ocultar');
+
+        const selectornumber = document.getElementById('numrate');
+        selectornumber.innerHTML = rateNumber
     }
-}
-
-
-function submit(eleccion) {
-    if(eleccion != 0){
-        const numrate = document.getElementById('numrate');
-        numrate.innerText = 2;
-        window.location.href = 'rating.html';
-    }
-   
 }
